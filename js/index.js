@@ -23,12 +23,6 @@ $(document).ready(function () {
       })
 
 
-    $('#main-nav li a').click(function (e) {
-        //   e.preventDefault(); // Prevent default action
-
-        $('#main-nav li a').removeClass('active'); // Remove active from all
-        $(this).addClass('active'); // Add active to the clicked link
-    });
 
 
     var typed = new Typed('#element', {
