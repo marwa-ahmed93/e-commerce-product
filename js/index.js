@@ -6,7 +6,7 @@ $(document).ready(function () {
         let wScroll = $(window).scrollTop();  // Get the current scroll position dynamically
 
         if (wScroll > sectionProto - 100) {  // Compare the scroll position
-            $("#main-nav").css("backgroundColor", "rgb(207, 206, 206)");  // Change navbar background to red
+            $("#main-nav").css("backgroundColor", "rgb(68, 67, 67)");  // Change navbar background to red
             $("#btnUp").fadeIn(500)
 
         } else {
