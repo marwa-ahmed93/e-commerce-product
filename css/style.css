@@ -19,7 +19,6 @@ header {
 }
 
 header h1 {
-    font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 60px;
@@ -28,51 +27,6 @@ header h1 {
 .text {
     height: 100%;
 }
-
-/* header p::after {
-    content: " | ";
-    animation-name: typing;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-} */
-
-/* @keyframes typing {
-    0% {
-        content: " | ";
-    }
-
-    3% {
-        content: " D| ";
-    }
-
-    9% {
-        content: " De| ";
-    }
-
-    12% {
-        content: " Des| ";
-    }
-
-    15% {
-        content: " Desi| ";
-    }
-
-    18% {
-        content: " Desin| ";
-    }
-
-    21% {
-        content: " Desine| ";
-    }
-
-    24% {
-        content: " Desiner| ";
-    }
-
-    27% {
-        content: " Desi| ";
-    }
-} */
 
 #portfolio {
     background-color: #f7f7f7f7;
@@ -89,18 +43,19 @@ header h1 {
 
 nav {
     position: absolute;
-  
+
 }
 
 
 
-#btnUp{
+#btnUp {
     position: fixed;
     bottom: 40px;
     right: 40px;
     z-index: 999;
     display: none;
 }
+
 #portfolio button {
     color: #000 !important;
     font-size: 18px;
@@ -184,29 +139,33 @@ nav {
 .showImg {
     width: 300px;
     height: 300px;
-   background-color: white;
-   border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
 
 
 }
-.showImg img:hover{
-    transform: scale(1.2,1.2);
+
+.showImg img:hover {
+    transform: scale(1.2, 1.2);
     cursor: pointer;
 }
 
-.showImg img{
+.showImg img {
     width: 100%;
     max-height: 100%;
     position: relative;
     transition: transform 2s;
 }
-.showPdata{
+
+.showPdata {
     font-size: 22px;
     color: brown;
 }
-.showPdata span{
+
+.showPdata span {
     color: black;
 }
+
 .rate {
     display: flex;
     justify-content: center;
@@ -217,16 +176,18 @@ nav {
     width: 40px;
     height: 40px;
     position: absolute;
-  
+
 
 }
-.divH{
+
+.divH {
     width: 80%;
     text-align: center;
 
 }
+
 .loader {
-    font-size:48px;
+    font-size: 48px;
     color: #FFF;
     width: 1em;
     height: 1em;
@@ -235,9 +196,10 @@ nav {
     position: relative;
     border-radius: 50%;
     transform: rotateX(-60deg) perspective(1000px);
-  }
-  .loader:before,
-  .loader:after {
+}
+
+.loader:before,
+.loader:after {
     content: '';
     display: block;
     position: absolute;
@@ -248,38 +210,41 @@ nav {
     height: inherit;
     border-radius: inherit;
     animation: flowerFlow 1s ease-out infinite;
-  }
-  .loader:after {
-    animation-delay: .4s;
-  }
+}
 
-  @keyframes flowerFlow {
+.loader:after {
+    animation-delay: .4s;
+}
+
+@keyframes flowerFlow {
     0% {
-      opacity: 1;
-      transform: rotate(0deg);
-      box-shadow: 0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor,
-      0 0 0 -.5em currentcolor;
+        opacity: 1;
+        transform: rotate(0deg);
+        box-shadow: 0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor,
+            0 0 0 -.5em currentcolor;
     }
+
     100% {
-      opacity: 0;
-      transform: rotate(180deg);
-      box-shadow: -1em -1em 0 -.35em currentcolor,
-      0 -1.5em 0 -.35em currentcolor,
-      1em -1em 0 -.35em currentcolor,
-      -1.5em 0 0 -.35em currentcolor,
-      1.5em -0 0 -.35em currentcolor,
-      -1em 1em 0 -.35em currentcolor,
-      0 1.5em 0 -.35em currentcolor,
-      1em 1em 0 -.35em currentcolor;
+        opacity: 0;
+        transform: rotate(180deg);
+        box-shadow: -1em -1em 0 -.35em currentcolor,
+            0 -1.5em 0 -.35em currentcolor,
+            1em -1em 0 -.35em currentcolor,
+            -1.5em 0 0 -.35em currentcolor,
+            1.5em -0 0 -.35em currentcolor,
+            -1em 1em 0 -.35em currentcolor,
+            0 1.5em 0 -.35em currentcolor,
+            1em 1em 0 -.35em currentcolor;
     }
-  }
-  .loading{
+}
+
+.loading {
     width: 100%;
     height: 50vh;
     background-color: #000;
@@ -287,4 +252,4 @@ nav {
     justify-content: center;
     align-items: center;
     opacity: 0;
-  }
+}
